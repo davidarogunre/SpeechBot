@@ -59,13 +59,6 @@ def task():
         elif 'open' in command:
             command = command[command.index('open')+5:]
             webbrowser.open(f'https://{command}.com')
-        #     say('opening whatsapp')
-        #     webbrowser.open("https://web.whatsapp.com/", new=1)
-        # elif 'twitch' in command:
-        
-        #     say('opening twitch')
-        #     webbrowser.open("https://twitch.tv/", new=1)
-        else:
             pywhatkit.search(command)
     except:
         print('I didn\'t hear you')
